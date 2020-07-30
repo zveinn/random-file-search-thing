@@ -1,5 +1,7 @@
 # Golang lessons
 
+# https://github.com/zkynet/golang-lessons-for-beginners
+
 # These lessons are meant to get begginers into golang. 
 
 # https://twitch.tv/zhuffles
