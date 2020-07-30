@@ -11,5 +11,7 @@
 ## golang.org
 
 
+# Plugin: https://code.visualstudio.com/docs/languages/go
+
 ## other stuff
 # https://en.wikipedia.org/wiki/Hash_table
