@@ -2,7 +2,6 @@
 
 # introduction to golang, 5 minutes
 ## functional/hybrid language
-## 
 
 # hello world
 1. main.go
