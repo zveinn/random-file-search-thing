@@ -9,3 +9,7 @@
 # Website we will use as references during these lectures:
 ## https://gobyexample.com/
 ## golang.org
+
+
+## other stuff
+# https://en.wikipedia.org/wiki/Hash_table
