@@ -1,22 +1,8 @@
 # GOLANG/Programming ( Getting started )
 
-# Getting started
-
+## Introduction (just chatting)
 ## Building blocks
-## Basic design pattern / orginizing your files
-## go modules / packages
-## Working with files and time
+## Orginizing your files ( your first design pattern )
+## modules, files and time
 ## Collections and sorting
-## 
-
-# GOLANG / Programming ( APIs / HTTP servers )
-
-# GOLANG / Programming ( goroutines and channels )
-
-# GOLANG / Programming ( Advanced concepts )
-# Design patterns
-## Decorator
-## MVC
-# Concurrency patterns
-
-
+## ...
