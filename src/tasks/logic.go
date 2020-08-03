@@ -1,0 +1,4 @@
+package tasks
+
+func CreateTask() {
+}
