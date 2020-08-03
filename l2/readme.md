@@ -29,5 +29,8 @@
  
 
 
-# GO MOD
-1. go mod init
+# GO MOD: https://blog.golang.org/using-go-modules
+
+
+ # links
+ https://en.wikipedia.org/wiki/SOLID
