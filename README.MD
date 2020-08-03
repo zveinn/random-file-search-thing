@@ -1,19 +1,22 @@
-# Golang lessons
+# GOLANG/Programming ( Getting started )
 
-# https://github.com/zkynet/golang-lessons-for-beginners
+# Getting started
 
-# These lessons are meant to get begginers into golang. 
+## Building blocks
+## Basic design pattern / orginizing your files
+## go modules / packages
+## Working with files and time
+## Collections and sorting
+## 
 
-# https://twitch.tv/zhuffles
+# GOLANG / Programming ( APIs / HTTP servers )
 
-# Golang slack: https://gophers.slack.com/?redir=%2Fmessages%2Fgeneral%2F
+# GOLANG / Programming ( goroutines and channels )
 
-# Website we will use as references during these lectures:
-## https://gobyexample.com/
-## golang.org
+# GOLANG / Programming ( Advanced concepts )
+# Design patterns
+## Decorator
+## MVC
+# Concurrency patterns
 
 
-# Plugin: https://code.visualstudio.com/docs/languages/go
-
-## other stuff
-# https://en.wikipedia.org/wiki/Hash_table
