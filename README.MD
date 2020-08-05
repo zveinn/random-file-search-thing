@@ -19,8 +19,8 @@
 ## modules, files and timestamps
 - Errors
 - Working with local files
-- Working with timestamps
 ## Collections and sorting
+- Working with timestamps
 - todo
 ## using GIT to keep track of your code.
 - todo
