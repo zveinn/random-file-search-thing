@@ -1,4 +1,0 @@
-package tasks
-
-func CreateTask() {
-}
