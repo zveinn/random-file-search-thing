@@ -1,0 +1,3 @@
+todo:
+
+4. Add cli arguments to specify directory to read.
