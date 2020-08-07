@@ -7,3 +7,4 @@
 # golang.org
 # Plugin: https://code.visualstudio.com/docs/languages/go
 # Timestamps:  https://yourbasic.org/golang/format-parse-string-time-date-example/
+# basic sorting: https://yourbasic.org/golang/how-to-sort-in-go/
