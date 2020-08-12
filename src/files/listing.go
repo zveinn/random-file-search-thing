@@ -13,10 +13,12 @@ func CreateFileMap(dir string) (fileMap map[string]File) {
 
 		Callback: func(osPathname string, info *godirwalk.Dirent) error {
 
-			if strings.Contains(osPathname, ".git") {
-				return errors.New("skipping: " + osPathname)
+			for _, v := range GlobalConfig.Ignore {
+				if strings.Contains(osPathname, v) {
+					return errors.New("skipping: " + osPathname)
+					// return filepath.SkipDir
+				}
 			}
-
 			// Save the file info.
 			fileMap[osPathname] = File{
 				Name:  osPathname,

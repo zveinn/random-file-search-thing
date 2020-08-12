@@ -1,3 +1,10 @@
 
+X. recap
+X. implement a config.json file
+x. Follow up on github issue
+   - probably reopen the issue
+4. multi platform builds
+x. intro to debugging
 
 
+... minute 53

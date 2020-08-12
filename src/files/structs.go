@@ -25,3 +25,9 @@ func (f *File) Print() {
 	log.Println("FILE INFO:")
 	log.Println(f.Name)
 }
+
+// Config ...
+type Config struct {
+	Ignore      []string `json:"ignore"`
+	MaxFileSize int64    `json:"maxFileSize"`
+}
