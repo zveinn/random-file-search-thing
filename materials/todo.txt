@@ -1,10 +1,11 @@
+1. recap
+2. channels and go routines
+   - Design a flow.
+   - 10x pipes
+   - done signals
+   - Found match struct
+   - print channel
+3. wait group
 
-X. recap
-X. implement a config.json file
-x. Follow up on github issue
-   - probably reopen the issue
-4. multi platform builds
-x. intro to debugging
 
-
-... minute 53
+find > buffer 5000 > search x10 > buffer 5000x10 > print

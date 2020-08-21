@@ -13,6 +13,10 @@ type File struct {
 	ModTime time.Time
 	Mode    string
 	Size    int64
+	Results SearchResults
+}
+type SearchResults struct {
+	Hits map[int]string
 }
 
 // FullPath ...
