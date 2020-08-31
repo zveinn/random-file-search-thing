@@ -1,6 +1,12 @@
 package files
 
-import "log"
+import (
+	"fmt"
+	"strconv"
+	"strings"
+
+	"github.com/fatih/color"
+)
 
 var printBufferMap = make(map[int]chan File)
 
@@ -12,13 +18,16 @@ func InitPrintBuffers(keyword string) {
 }
 
 func processPrintBuffer(index int, keyword string) {
-	log.Println("Starting print buffer nr:", index)
+	// log.Println("Starting print buffer nr:", index)
 	var file File
 	for {
 		file = <-printBufferMap[index]
-		log.Println("WE FOUND THE WORD IN FILE:", file.Name)
+		// log.Println("WE FOUND THE WORD IN FILE:", file.Name)
+		color.Green("FILE: " + file.Name)
 		for i, v := range file.Results.Hits {
-			log.Println("LINE:", i, v)
+			v = strings.Replace(v, keyword, color.YellowString(keyword), -1)
+			fmt.Println(color.GreenString("("+strconv.Itoa(i)+"): ") + v)
 		}
+		GlobalWaitGroup.Done()
 	}
 }

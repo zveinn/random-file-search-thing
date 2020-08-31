@@ -26,12 +26,17 @@ func main() {
 	files.InitPrintBuffers(os.Args[2])
 
 	files.WalkDirectories(os.Args[1])
-	for {
-		time.Sleep(10 * time.Second)
-	}
+
+	// Wait group
+	files.GlobalWaitGroup.Wait()
+
 	// meow
 	// meow
 	// meow
 	// meow
 	// meow
+}
+
+func something() (error, chan int) {
+	return nil, make(chan int)
 }

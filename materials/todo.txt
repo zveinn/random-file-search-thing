@@ -1,11 +1,5 @@
 1. recap
-2. channels and go routines
-   - Design a flow.
-   - 10x pipes
-   - done signals
-   - Found match struct
-   - print channel
-3. wait group
+3. wait groups ?
+4. colors
 
-
-find > buffer 5000 > search x10 > buffer 5000x10 > print
+find > buffer 5000 > search x50 > buffer 5000x10 > print

@@ -2,8 +2,11 @@ package files
 
 import (
 	"log"
+	"sync"
 	"time"
 )
+
+var GlobalWaitGroup = sync.WaitGroup{}
 
 // File ...
 type File struct {
