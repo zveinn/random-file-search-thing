@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/zkynet/golang-lessons-for-beginners/src/files"
+	"github.com/zveinn/golang-lessons-for-beginners/src/files"
 )
 
 func main() {
