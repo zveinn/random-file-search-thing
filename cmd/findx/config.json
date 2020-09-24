@@ -1,0 +1,8 @@
+{
+    "ignore": [
+        ".gitinore",
+        ".exe",
+        ".git"
+    ],
+    "maxFileSize": 2
+}
