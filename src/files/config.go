@@ -5,12 +5,19 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"os/user"
 )
 
 var GlobalConfig *Config
 
 func LoadConfig() {
-	data, err := ioutil.ReadFile("config.json")
+
+	user, err := user.Current()
+	if err != nil {
+		log.Fatalf(err.Error())
+	}
+
+	data, err := ioutil.ReadFile(user.HomeDir + "/search.json")
 	if err != nil {
 		log.Println("Could not find config file ...")
 		os.Exit(1)
