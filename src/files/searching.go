@@ -12,21 +12,21 @@ import (
 
 var searchBufferMap = make(map[int]chan File)
 
-func InitSearchBuffers(keyword string) {
+func InitSearchBuffers(keywords string) {
 	for i := 0; i < 5; i++ {
 		searchBufferMap[i] = make(chan File, 5000)
-		go processSearchBuffer(i, keyword)
+		go processSearchBuffer(i, keywords)
 	}
 }
 
-func processSearchBuffer(index int, keyword string) {
+func processSearchBuffer(index int, keywords string) {
 	// log.Println("Starting search buffer nr:", index)
 	for {
-		WordSearch(<-searchBufferMap[index], keyword)
+		WordSearch(<-searchBufferMap[index], keywords)
 	}
 }
 
-func WordSearch(v File, keyword string) {
+func WordSearch(v File, keywords string) {
 
 	stat, err := os.Stat(v.Name)
 	// if the file is 200mb or bigger, we continue
@@ -42,15 +42,18 @@ func WordSearch(v File, keyword string) {
 		return
 	}
 
+	wordList := strings.Split(keywords, ",")
 	scanner := bufio.NewScanner(file)
 	var line string
 	var foundKeyword bool
 	lineNumber := 1
 	for scanner.Scan() {
 		line = scanner.Text()
-		if strings.Contains(line, keyword) {
-			foundKeyword = true
-			v.Results.Hits[lineNumber] = line
+		for _, keyword := range wordList {
+			if strings.Contains(line, keyword) {
+				foundKeyword = true
+				v.Results.Hits[lineNumber] = line
+			}
 		}
 		lineNumber++
 	}
